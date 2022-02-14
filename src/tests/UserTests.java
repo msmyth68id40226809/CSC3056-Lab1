@@ -48,10 +48,14 @@ public class UserTests {
 			passed = false;
 		}
 		
+
+		if (passed)
+			System.out.println("All TCs passed.");
+		
 		//using assert's
 		
 		assert testUser.getUsername() == testUsername;
-		//assert 1==2
+//		assert 1==2;
 		assert testUser.getPassword() == testPassword;
 		
 		assert testUser.getFirstName() == testFirstName;
@@ -61,9 +65,7 @@ public class UserTests {
 		assert testUser.getMobileNumber() == testMobileNumber;
 		
 		System.out.println("All java assertions in the test suite passed (none failed).");
-		
-		if (passed)
-			System.out.println("All TCs passed.");
+
 	}
 
 }
